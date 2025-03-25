@@ -20,15 +20,15 @@ This project is a Rust reimplementation of the original C4 compiler—a minimal 
 
 The repository is organized as follows:
 c4_rust_Al-Hiyar 
-# GitHub repository name 
+GitHub repository name 
 ├── Cargo.toml 
-# Cargo configuration file 
+Cargo configuration file 
 ├── c4.rs 
-# Main Rust source file implementing the compiler
+Main Rust source file implementing the compiler
 ├── c4 +bonus.rs 
-# Rust source file implementing the compiler (includes bonus floating‑point support) 
+Rust source file implementing the compiler (includes bonus floating‑point support) 
 ├── README.md 
-# This file 
+This file 
 └── c4_rust_comparison.pdf 
-# Comparison report between the Rust implementation and the original C4 compiler
+Comparison report between the Rust implementation and the original C4 compiler
 
