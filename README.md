@@ -105,9 +105,19 @@ cargo run -- float_test.c
 ```
 The expected output should show that the program executed successfully and returned the result of the floating‑point arithmetic.
 
- # **Additional Documentation**
+
+# Self-Hosting Demonstration 
+
+This compiler is designed to be self-hosting—that is, it should be able to compile its own source code. To test this property, try compiling the compiler’s own source file. For example:
+
+```bash
+cargo run -- c4.rs
+```
+If the compiler successfully compiles its own source code and produces the expected output, then the self-hosting capability is verified.
+
+ # Additional Documentation
  
-- Rust Documentation:
+- **Rust Documentation:**
   
 The source code is fully documented using Rust doc comments. To generate HTML documentation, run:
 
@@ -118,7 +128,24 @@ cargo doc --open
 
 The file c4_rust_comparison.pdf provides an in-depth comparison between this Rust implementation and the original C4 compiler, including design decisions, performance insights, and challenges encountered during the rewrite.
 
+# Collaboration and GitHub Workflow
 
+- **Repository Name:**  
+  The GitHub repository is named `c4_rust_-Al-Hiyar`.
+
+- **Commit History:**  
+  Both team members, **Rauda** and **Almaha**, have contributed equally to the project. Each commit message clearly indicates individual work on major features. For example:
+  - "Rauda: Implemented lexer"
+  - "Almaha: Added floating‑point support"
+  - "Rauda: Fixed VM instruction parsing"
+
+- **Branching and Pull Requests:**  
+  Features and bug fixes have been developed on separate branches and merged via pull requests to facilitate code review and collaboration.
+
+
+# Conclusion
+
+This project demonstrates a self-hosting C compiler implemented in Rust with enhanced safety, maintainability, and a bonus feature for floating‑point support. Follow the instructions above to build, run, and test the compiler. For further details, please refer to the in-code documentation and the comparison report.
 
 
 
