@@ -774,4 +774,48 @@ mod additional_tests {
         let result = execute(opcodes).expect("Execution failed");
         assert_eq!(result, 42);
     }
+
+    /// Test long arithmetic expression with precedence
+    #[test]
+    fn test_complex_expression() {
+        let source = r#"
+        int main() {
+            return 2 + 3 * 4 - 6 / 2;
+        }
+        "#;
+        let tokens = tokenize(source).expect("Failed to tokenize");
+        let opcodes = parse(tokens).expect("Failed to parse");
+        let result = execute(opcodes).expect("Execution failed");
+        assert_eq!(result, 2 + 3 * 4 - 6 / 2);
+    }
+
+    /// Test multiple variable declarations and usage
+    #[test]
+    fn test_multiple_variables() {
+        let source = r#"
+        int main() {
+            int a, b;
+            a = 5;
+            b = 10;
+            return a + b;
+        }
+        "#;
+        let tokens = tokenize(source).expect("Failed to tokenize");
+        let opcodes = parse(tokens).expect("Failed to parse");
+        let result = execute(opcodes).expect("Execution failed");
+        assert_eq!(result, 15);
+    }
+
+    /// Test unmatched parentheses to simulate a syntax error
+    #[test]
+    fn test_unmatched_parentheses() {
+        let source = r#"
+        int main() {
+            return (5 + 2;
+        }
+        "#;
+        let tokens = tokenize(source).expect("Failed to tokenize");
+        let parse_result = parse(tokens);
+        assert!(parse_result.is_err(), "Expected error due to unmatched parentheses");
+    }
 }
