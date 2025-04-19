@@ -155,3 +155,33 @@ This project demonstrates a self-hosting C compiler implemented in Rust with enh
 
 
 
+
+---
+
+## ✅ Testing Instructions
+
+This project includes a suite of inline unit tests to validate the compiler's behavior across different scenarios:
+
+### ✔ Covered Test Cases:
+- `test_nested_if_else`: Verifies correct control flow handling for nested if–else constructs.
+- `test_nested_while_loops`: Checks the behavior of nested loops and variable mutation.
+- `test_undefined_variable_error`: Confirms that the parser raises errors for undeclared variables.
+- `test_division_by_zero_error`: Ensures runtime safety with division by zero detection.
+- `test_invalid_syntax_error`: Validates the parser catches syntax errors.
+- `test_self_hosting`: Simulates a minimal self-hosting test with `int main() { return 42; }`.
+
+### 🛠 How to Run Tests
+Run the following command in the root of the project:
+```bash
+cargo test
+```
+
+### 📊 Recommended: Generate Code Coverage (Optional)
+To check test coverage, you can install and run `cargo tarpaulin`:
+
+```bash
+cargo install cargo-tarpaulin
+cargo tarpaulin
+```
+
+
