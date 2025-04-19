@@ -158,7 +158,7 @@ This project demonstrates a self-hosting C compiler implemented in Rust with enh
 
 ---
 
-## ✅ Testing Instructions
+##  Testing Instructions
 
 This project includes a suite of inline unit tests to validate the compiler's behavior across different scenarios:
 
@@ -170,13 +170,13 @@ This project includes a suite of inline unit tests to validate the compiler's be
 - `test_invalid_syntax_error`: Validates the parser catches syntax errors.
 - `test_self_hosting`: Simulates a minimal self-hosting test with `int main() { return 42; }`.
 
-### 🛠 How to Run Tests
+###  How to Run Tests
 Run the following command in the root of the project:
 ```bash
 cargo test
 ```
 
-### 📊 Recommended: Generate Code Coverage (Optional)
+###  Recommended: Generate Code Coverage (Optional)
 To check test coverage, you can install and run `cargo tarpaulin`:
 
 ```bash
