@@ -143,17 +143,6 @@ The file c4_rust_comparison.pdf provides an in-depth comparison between this Rus
   Features and bug fixes have been developed on separate branches and merged via pull requests to facilitate code review and collaboration.
 
 
-# Conclusion
-
-This project demonstrates a self-hosting C compiler implemented in Rust with enhanced safety, maintainability, and a bonus feature for floating‑point support. Follow the instructions above to build, run, and test the compiler. For further details, please refer to the in-code documentation and the comparison report.
-
-
-
-
-
-
-
-
 
 
 ---
@@ -184,4 +173,9 @@ cargo install cargo-tarpaulin
 cargo tarpaulin
 ```
 
+# Conclusion
+
+This project demonstrates a self-hosting C compiler implemented in Rust with enhanced safety, maintainability, and a bonus feature for floating‑point support. Follow the instructions above to build, run, and test the compiler. For further details, please refer to the in-code documentation and the comparison report.
+
+> **Note:** This project is based on the original [`c4.c`](./c4.c) C source file provided in the project requirements. It served as the reference implementation for translating the compiler logic into Rust.
 
