@@ -75,6 +75,11 @@ cargo test
 
 Ensure all tests pass to verify that the compiler processes the supported subset of C correctly, including the bonus floating‑point functionality.
 
+### Test Coverage
+
+The project uses `cargo-tarpaulin` to generate a code coverage report for unit tests. As shown below, the project achieves over **76% test coverage**.
+
+![Tarpaulin Coverage](./coverage.png)
 
 
 
