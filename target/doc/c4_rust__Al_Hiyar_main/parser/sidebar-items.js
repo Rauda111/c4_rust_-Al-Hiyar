@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["SymbolClass"],"fn":["parse"],"struct":["Parser","Symbol"],"type":["ParseResult"]};
