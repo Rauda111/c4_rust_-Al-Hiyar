@@ -130,8 +130,7 @@ If the compiler can process and run its own source, self-hosting is verified.
 
 ## Team & Collaboration
 
-- Project by **Rauda** and **Almaha**
-- Work divided via Git branching and clear commit messages. 
+This project was collaboratively designed, developed, and reviewed by Rauda Alsheaili and Almaha Alshamsi. Both members contributed equally to planning, writing, testing, and finalizing the C4 Rust Compiler.
 
 ---
 
